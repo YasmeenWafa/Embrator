@@ -1,0 +1,61 @@
+html {
+  // font-family: "route";
+
+  @include breakpoint(320px) {
+    font-size: 8px;
+  }
+  @include breakpoint(375px) {
+    font-size: 10px;
+  }
+  @include breakpoint(768px) {
+    font-size: 12px;
+  }
+  @include breakpoint(855px) {
+    font-size: 13px;
+  }
+  @include breakpoint(1280px) {
+    font-size: 14px;
+  }
+  @include breakpoint(1360px) {
+    font-size: 15px;
+  }
+  @include breakpoint(1366px) {
+    font-size: 16px;
+  }
+  @include breakpoint(1440px) {
+    font-size: 17px;
+  }
+  @include breakpoint(1600px) {
+    font-size: 18px;
+  }
+  @include breakpoint(1680px) {
+    font-size: 19px;
+  }
+  @include breakpoint(1920px) {
+    font-size: 20px;
+  }
+  @include breakpoint(2560px) {
+    font-size: 33px;
+  }
+}
+
+@font-face {
+  font-family: "CS";
+  src: url("../fonts/Cairo/Cairo-SemiBold.ttf");
+}
+@font-face {
+  font-family: "CB";
+  src: url("../fonts/Cairo/Cairo-Bold.ttf");
+}
+
+@font-face {
+  font-family: "CR";
+  src: url("../fonts/Cairo/Cairo-Regular.ttf");
+}
+
+
+
+@font-face {
+  font-family: "A";
+  src: url("../fonts/Amithen Brush Font/Amithen.ttf");
+}

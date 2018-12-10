@@ -1,0 +1,38 @@
+.embrator {
+    &__tAc{
+        background-color: $bk-grey;
+    }
+    &__sideTitle {
+      font-family: CB;
+      text-decoration: underline;
+      display: inline-block;
+    //   max-width: 0;
+    }
+    &__template{
+        min-height: 100vh;
+    }
+  }
+  .tAc {
+    &__sectionTitle{
+      font-family: CS;
+      font-size: 2.4rem;
+    }
+    &__ans {
+      font-family: CR;
+      color: black;
+      font-size: 1.3rem;
+      a {
+        color: $aqua;
+        font-family: CR;
+      }
+    }
+  }
+// Mobile First 
+
+// Desktop Version
+@media screen and #{breakpoint(medium)} {
+        
+}
+
+
+

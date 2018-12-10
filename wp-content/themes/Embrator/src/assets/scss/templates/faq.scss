@@ -1,0 +1,36 @@
+.embrator {
+    &__faq{
+        background-color: $bk-grey;
+    }
+    &__sideTitle {
+      font-family: CB;
+      text-decoration: underline;
+      display: inline-block;
+    //   max-width: 0;
+    }
+    &__template{
+        min-height: 100vh;
+    }
+  }
+  .faq {
+    &__q {
+      font-family: CR;
+    }
+    &__ans {
+      font-family: CR;
+      color: #868686;
+      a {
+        color: $aqua;
+        font-family: CR;
+      }
+    }
+  }
+// Mobile First 
+
+// Desktop Version
+@media screen and #{breakpoint(medium)} {
+        
+}
+
+
+

@@ -1,0 +1,42 @@
+.spyScroll {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 5%;
+  position: relative;
+  &__sidebar {
+    list-style: none;
+    margin: 0;
+    padding: 3%;
+    padding-top: 5%;
+    flex-basis: 20%;
+    position: sticky;
+    top: 10%;
+  }
+  &__link {
+    margin: 0.5em 0;
+    a {
+      color: $bk-blue;
+      font-family: CR;
+      font-size: 1rem;
+      &.is-active {
+        color: $aqua;
+      }
+    }
+  }
+  &__targets {
+    padding: 5%;
+    flex-basis: 80%;
+  }
+  &__target {
+    margin: 2em 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and #{breakpoint(medium)} {
+        
+}
