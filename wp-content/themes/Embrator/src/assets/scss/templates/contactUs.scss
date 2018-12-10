@@ -1,0 +1,47 @@
+.contact-us-container{
+  padding: 10em;
+  & .contact-us-header{
+    color: black;
+    font-family: A;
+    font-size: 7rem;
+  }
+  & .contact-us-container-inner{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    & .contact-us-form{
+      padding: 1em;
+      flex:1;
+      border:1px solid;
+      & .form-heading{
+        font-family: CR;
+        color: black;
+        font-size: 1.5rem;
+      }
+      & .gform_wrapper{
+         & .top_label {
+           & .gfield_label{
+              display: none;
+            }
+          }
+          & input{
+            border-radius: 0.3em;
+            &::placeholder{
+              font-family: CL;
+              padding-left: 1em;
+            }
+          }
+          & textarea{
+            border-radius: 0.3em;
+            font-family: CL;
+            padding-left: 1em;
+          }
+        }
+    }
+    & .contact-us-info{
+      padding: 1em;
+      flex:1;
+      border: 1px solid;
+    }
+  }
+}
