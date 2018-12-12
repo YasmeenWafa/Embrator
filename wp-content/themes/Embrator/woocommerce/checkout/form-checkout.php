@@ -94,7 +94,10 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 <!-- <desktop -->
 	<ul class="order-review-accordion accordion mobile-view" data-accordion data-multi-expand="true" data-allow-all-closed="true">
 		<li class="accordion-item is-active" data-accordion-item>
-			<a href="#" class="accordion-title">Show order summary <i class="icon-down-open"></i> <span><?php wc_cart_totals_order_total_html(); ?></span> </a>
+			<a href="#" class="accordion-title">Show order summary
+				 <i class="icon-down-open"></i>
+
+				  <span><?php wc_cart_totals_order_total_html(); ?></span> </a>
 	<div class="order-review accordion-content"  data-tab-content>
 
 

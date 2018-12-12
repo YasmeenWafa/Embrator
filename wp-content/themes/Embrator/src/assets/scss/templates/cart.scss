@@ -13,6 +13,7 @@ article{
   display: inline-block;
   position: absolute;
   right: 28%;
+  top: 32%;
  & .woocommerce-message{
   border-top-color: $aqua;
   font-family: CL;
@@ -183,11 +184,13 @@ max-width: 100%;
         text-align: center;
         right: 0;
         top: 20%;
-        height: 60%;
+        height: auto;
+        padding: 2em 0;
         vertical-align: middle;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        z-index: 5;
 
         & .cart_totals{
           float: none;
@@ -199,6 +202,7 @@ max-width: 100%;
             font-family: CB;
             color: $bk-blue;
             text-transform: uppercase;
+            margin-bottom: 0;
           }
           & .checkout-button{
             background-color: #272727;
@@ -213,7 +217,7 @@ max-width: 100%;
           & table{
             border:none;
 
-            padding-top: 3em;
+            padding-top: 2em;
             & tbody{
               background-color: transparent;
             &  tr{
@@ -271,7 +275,8 @@ max-width: 100%;
  .main-container{
    padding: 0;
   & .cart-page-container{
-    padding: 0;
+    // padding: 0;
+    padding-top: 20em;
     display: block;
     & .whole-menu{
       display: none;

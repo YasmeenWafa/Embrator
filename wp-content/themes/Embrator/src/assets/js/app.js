@@ -7,6 +7,7 @@ import "./modules/header";
 import "./modules/footer";
 import "./modules/sliders";
 import "./modules/contactUs";
+import "./modules/cart-checkout";
 import "gsap/CSSPlugin.js";
 import Parallax from "parallax-js";
 

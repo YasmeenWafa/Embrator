@@ -1,4 +1,4 @@
-CL.woocommerce-info{
+.woocommerce-info{
   display: none;
 }
 .woocommerce-account-fields{
@@ -26,7 +26,7 @@ CL.woocommerce-info{
     & span input:focus{
       -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
       -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-      border-image: linear-gradient(to left, #692a15, #fb6220);
+      border-image: linear-gradient(to left, $bk-blue, $aqua);
       border-image-slice: 1;
       border-width: 4px;
       background-color: transparent;
@@ -85,17 +85,18 @@ CL.woocommerce-info{
 // }
 
 .checkout-page-container{
-  margin-top: -5em;
-  padding: 0 5em;
+  // margin-top: -5em;
+  // padding: 0 5em;
   display: flex;
-  & .whole-menu
-  {
-    padding: 15em 0;
-
-  & .menu{
-    flex-direction: column;
-  }
-  }
+  padding: 12em 0;
+  // & .whole-menu
+  // {
+  //   padding: 15em 0;
+  //
+  // & .menu{
+  //   flex-direction: column;
+  // }
+  // }
   & .checkout-page-container-inner{
     padding: 0 9em;
     width: 100%;
@@ -245,7 +246,7 @@ CL.woocommerce-info{
           & input:focus{
             -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
             -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-            border-image: linear-gradient(to left, #692a15, #fb6220);
+            border-image: linear-gradient(to left, $bk-blue, $aqua);
             border-image-slice: 1;
             border-width: 4px;
             background-color: transparent;
@@ -285,7 +286,7 @@ CL.woocommerce-info{
            font-family: CR;
            -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
            -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-           border-image: linear-gradient(to left, #692a15, #fb6220);
+           border-image: linear-gradient(to left, $bk-blue, $aqua);
            border-image-slice: 1;
            border-width: 4px;
            background-color: transparent;
@@ -391,8 +392,8 @@ CL.woocommerce-info{
             letter-spacing: 1px;
             display: flex;
             & .attachment-woocommerce_thumbnail{
-              width: 30%;
-              height: 30%;
+              width: 40%;
+              height: 40%;
               border: 1px solid #272727;
               padding: 0.5em;
               background-color: white;
@@ -408,7 +409,7 @@ CL.woocommerce-info{
               position: absolute;
               top: 0;
               left: 5em;
-              background-color: #fb6220;
+              background-color: $aqua;
               border-radius: 50%;
               padding: 0.5em;
               color: white;
@@ -482,7 +483,7 @@ CL.woocommerce-info{
 @media only screen and (max-width: 1024px) {
 
     .checkout-page-container{
-      padding: 0;
+      // padding: 0;
       display: block;
       & .whole-menu{
         display: none;
@@ -558,9 +559,9 @@ CL.woocommerce-info{
             }
           & .order-review-accordion.mobile-view{
             display: block;
-            background-color: #ffebd9;
+            background-color: #d8d8d8;
             & .accordion-title{
-              background-color:  #ffebd9;
+              background-color:  #d8d8d8;
               border: none;
               text-transform: uppercase;
               font-family: CR;
@@ -573,7 +574,7 @@ CL.woocommerce-info{
             }
             & .order-review{
               border:none;
-              background-color: #ffebd9;
+              background-color: #d8d8d8;
 
               // padding-top: 5em;
               flex:1;
@@ -614,8 +615,8 @@ CL.woocommerce-info{
                       letter-spacing: 1px;
                       display: flex;
                       & .attachment-woocommerce_thumbnail{
-                        width: 50%;
-                        height: 50%;
+                        width: 45%;
+                        height: 45%;
                         border: 1px solid #272727;
                         padding: 0.5em;
                         background-color: white;
@@ -631,7 +632,7 @@ CL.woocommerce-info{
                         position: absolute;
                         top: 0;
                         left: 42%;
-                        background-color: #fb6220;
+                        background-color: $aqua;
                         border-radius: 50%;
                         padding: 0.5em;
                         color: white;
