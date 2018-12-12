@@ -73,7 +73,7 @@
         left: 5em;
         background-size: contain;
         width: 90%;
-        height: 40em;
+        height: 38em;
         z-index: 3;
       }
       & .grey-box{
@@ -82,7 +82,8 @@
       top: -6em;
       left: 1em;
       width: 90%;
-      height: 40em;
+      // height: 40em;
+      height: auto;
       background-color: #d8d8d8;
       // overflow: scroll;
       padding: 3em;
@@ -121,7 +122,7 @@
     height: 0;
     z-index: 1;
     border-style: solid;
-    border-width: 0 0 65em 35vw;
+    // border-width: 0 0 65em 35vw;
     border-color: transparent transparent #32658a transparent;
     position: absolute;
     right: 0;
@@ -151,7 +152,7 @@
           left: 4em;
           background-size: contain;
           width: 90%;
-          height: 39em;
+          height: 37em;
           z-index: 3;
         }
         & .grey-box{
@@ -160,7 +161,8 @@
           top: -6em;
           left: 0em;
           width: 95%;
-          height: 40em;
+          // height: 40em;
+          height: auto;
           background-color: #d8d8d8;
           padding: 2em;
 
@@ -178,7 +180,7 @@
 
     }
     & .blue-triangle{
-      border-width: 0 0 132.2em 40vw;
+      border-width: 0 0 134.2em 50vw;
     }
   }
 
