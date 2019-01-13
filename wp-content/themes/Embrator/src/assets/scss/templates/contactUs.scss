@@ -1,0 +1,187 @@
+.contact-us-container{
+  padding: 10em;
+  background-color: #ececec;
+  position: relative;
+  & .contact-us-header{
+    color: black;
+    font-family: A;
+    font-size: 7rem;
+  }
+  & .contact-us-container-inner{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    & .contact-us-form{
+      padding: 1em;
+      flex:1;
+      // border:1px solid;
+      & .form-heading{
+        font-family: CR;
+        color: black;
+        font-size: 1.5rem;
+      }
+      & .gform_wrapper{
+        & .gform_body{
+          & li{
+            margin: 1.5em 0;
+          }
+
+        }
+        & .gform_footer{
+          & .gform_button{
+            width: 98%;
+            // margin: 0 auto;
+            display: block;
+            border-radius: 1.3em;
+            background-color: $bk-blue;
+            color:$aqua;
+            text-transform: uppercase;
+            font-family: CB;
+            // font-family: CB;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+          }
+        }
+         & .top_label {
+           & .gfield_label{
+              display: none;
+            }
+          }
+          & input{
+            border-radius: 0.3em;
+            &::placeholder{
+              font-family: CL;
+              padding-left: 1em;
+            }
+          }
+          & textarea{
+            border-radius: 0.3em;
+            font-family: CL;
+            padding-left: 1em;
+          }
+        }
+    }
+    & .contact-us-info{
+      padding: 1em;
+      flex:1;
+      // border: 1px solid;
+      position: relative;
+      left: 3em;
+      & .blue-box{
+        position: absolute;
+        top: -2em;
+        left: 5em;
+        background-size: contain;
+        width: 90%;
+        height: 38em;
+        z-index: 3;
+      }
+      & .grey-box{
+      position: absolute;
+      z-index: 5;
+      top: -6em;
+      left: 1em;
+      width: 90%;
+      // height: 40em;
+      height: auto;
+      background-color: #d8d8d8;
+      // overflow: scroll;
+      padding: 3em;
+      & .department{
+        // padding-bottom: 3em;
+        & h2{
+          font-family: CB;
+          border-bottom: 3px solid black;
+          display: inline-block;
+          margin-bottom: 0.5em;
+        }
+        & div{
+          font-family: CR;
+          padding: 0.3em 0;
+          font-size: 1.2rem;
+        }
+        & span{
+          font-family: CL;
+        }
+      }
+
+      }
+      & .black-stripes-box{
+        position: absolute;
+        z-index: 4;
+        top: -2em;
+        left: 7em;
+        width: 100%;
+        height: 46.5em;
+      }
+    }
+
+  }
+  & .blue-triangle{
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-style: solid;
+    // border-width: 0 0 65em 35vw;
+    border-color: transparent transparent #32658a transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .contact-us-container{
+
+    & .contact-us-header{
+
+    }
+    & .contact-us-container-inner{
+      flex-direction: column;
+
+      & .contact-us-info{
+        padding: 1em;
+        flex:1;
+        // border: 1px solid;
+        position: relative;
+        margin-top: 5em;
+        left: 0em;
+        & .blue-box{
+          position: relative;
+          top: -2em;
+          left: 4em;
+          background-size: contain;
+          width: 90%;
+          height: 37em;
+          z-index: 3;
+        }
+        & .grey-box{
+          position: absolute;
+          z-index: 5;
+          top: -6em;
+          left: 0em;
+          width: 95%;
+          // height: 40em;
+          height: auto;
+          background-color: #d8d8d8;
+          padding: 2em;
+
+
+        }
+        & .black-stripes-box{
+          position: absolute;
+          z-index: 4;
+          top: -1em;
+          left: 7em;
+          width: 100%;
+          height: 43.5em;
+        }
+      }
+
+    }
+    & .blue-triangle{
+      border-width: 0 0 134.2em 50vw;
+    }
+  }
+
+}
