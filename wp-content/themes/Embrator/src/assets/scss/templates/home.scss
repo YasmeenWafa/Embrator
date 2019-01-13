@@ -1,3 +1,21 @@
+#ver {
+  .cat {
+    // border: 6px solid black;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    // display: none;
+  }
+  #cat1 {
+    // border-color: orangered;
+    // display: block;
+    z-index: 1;
+  }
+  #cat2 {
+    // border-color: seagreen;
+  }
+}
 .section__intro {
   padding: 5%;
   background-color: $bk-grey;
@@ -216,7 +234,7 @@
     font-size: 4rem;
     text-align: center;
     color: black;
-    line-height: .8;
+    line-height: 0.8;
     margin: 1em 0;
     span {
       color: $aqua;
@@ -237,6 +255,42 @@
     font-family: CB;
     padding: 1% 5%;
     text-transform: uppercase;
+  }
+}
+.categoriesVariations {
+  border: 2px solid $aqua;
+  background-color: #085eae;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 22%;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 4px;
+  .categoryVariation {
+    margin: 0 5px;
+    font-size: 2em;
+    // border: 2px solid red;
+    max-width: 33%;
+    max-height: 1.5em;
+    svg {
+      width: 100%;
+      height: 1.5em;
+      path {
+        fill: white;
+      }
+    }
+    &.active {
+      svg {
+        path {
+          fill: $aqua!important;
+        }
+      }
+    }
   }
 }
 @media screen and #{breakpoint(medium)} {
