@@ -11,8 +11,8 @@ $(".years-slider").slick({
     autoplaySpeed:5000,
     vertical: true,
     verticalSwiping: true,
-    prevArrow: "<a  class='slick-prev '><i class='icon-up' aria-hidden='true'></i></a>",
-    nextArrow: "<a class='slick-next '><i class='icon-down' aria-hidden='true'></i></a>"
+    prevArrow: "<a  class='slick-prev '><i class='' aria-hidden='true'>&uarr;</i></a>",
+    nextArrow: "<a class='slick-next '><i class='' aria-hidden='true'>&darr;</i></a>"
 });
 $('.slick-dots li').each(function(i){
   // console.log($('.year-slide .year-button')[i]);
