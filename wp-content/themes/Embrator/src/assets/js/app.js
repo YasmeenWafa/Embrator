@@ -9,6 +9,7 @@ import "./modules/sliders";
 import "./modules/contactUs";
 import "./modules/cart-checkout";
 import "./modules/about";
+import "./modules/b2b";
 import "gsap/CSSPlugin.js";
 import Parallax from "parallax-js";
 

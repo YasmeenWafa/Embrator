@@ -1,13 +1,13 @@
 // import $ from "jquery";
 
-$(".tabs-title").on("hover mouseover", function() {
-  $(this).trigger("click");
-});
+// $(".tabs-title").on("hover mouseover", function() {
+//   $(this).trigger("click");
+// });
 
 var sliderSectionHight = $("#ver").outerHeight();
 $(window).scroll(function() {
   var top = $(this).scrollTop();
-  // If we are in the homepage do this 
+  // If we are in the homepage do this
   if ($("body").hasClass("page-id-5")) {
     if (top > sliderSectionHight) {
       $(".embrator__header").addClass("header--colored");
@@ -15,7 +15,7 @@ $(window).scroll(function() {
       $(".embrator__header").removeClass("header--colored");
     }
   }else {
-    // If we are in any other page than homepage change the background color of the header 
+    // If we are in any other page than homepage change the background color of the header
     if (top > 0) {
       $(".embrator__header").addClass("header--colored");
     } else {
