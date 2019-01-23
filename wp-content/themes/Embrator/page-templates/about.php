@@ -15,6 +15,7 @@ get_header(); ?>
 
 </div>
 <div class="about-page-paragraph">
+    <img  class="about-stamp" src="<?php echo get_stylesheet_directory_uri(); ?>/src/assets/images/pages/about/stamp.png" alt="">
     <h1 class="header-paragraph-title">Philosophy, <br>
 Mission, <br>
 and Vision.
@@ -53,6 +54,9 @@ and Vision.
     </div>
     <?php endif; ?>
 </div>
+<img style=""class="up-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/src/assets/images/pages/about/arrow.png" alt="">
+<img style="transform: rotate(180deg);"class="down-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/src/assets/images/pages/about/arrow.png" alt="">
+
 <section class="section section__branches" style="background-image: url(<?php
       echo get_stylesheet_directory_uri() ?>/src/assets/images/pages/Home/branches.png)">
     <h3>Embrator Branches</h3>

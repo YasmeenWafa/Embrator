@@ -67,11 +67,20 @@
   padding-top: 15em;
   padding-bottom: 5em;
   background-color: #d8d8d8;
+  position: relative;
+  & .about-stamp{
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    z-index: 1;
+  }
   & .header-paragraph-title{
       font-family: 'CB';
       font-size: 5rem;
       color: black;
       text-decoration: underline;
+      position: relative;
+      z-index: 2;
   }
   & .header-paragraph-text{
     & p{
@@ -107,21 +116,21 @@
     }
     & .slick-prev{
       position: absolute;
-      right: 4em;
-      top: 10em;
-      & i{
-        font-size: 4rem;
-        color: black;
-      }
+      right: 4.5em;
+      top: 13em;
+      // & i{
+      //   font-size: 4rem;
+      //   color: black;
+      // }
     }
     & .slick-next{
       position: absolute;
-      bottom: 10.5em;
-      right: 4em;
-      & i{
-        font-size: 4rem;
-        color: black;
-      }
+      bottom: 12.5em;
+      right: 4.5em;
+      // & i{
+      //   font-size: 4rem;
+      //   color: black;
+      // }
     }
 
     & .slick-dots{
@@ -171,14 +180,22 @@
       }
     }
   }
+  .about-page-paragraph{
+    & .about-stamp{
+      top: 12%;
+      left: 8%;
+    }
+  }
   .about-page-years-slider{
     & .years-slider
      {
       & .slick-prev{
-         right: 3.5em;
+         right: 3.8em;
+         top: 12em;
        }
        & .slick-next{
-         right: 3.5em;
+         right: 3.8em;
+         bottom: 11.5em;
        }
      }
   }

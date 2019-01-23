@@ -1,5 +1,7 @@
 import slick from "slick-carousel";
-
+let uparrow =$('.up-arrow');
+let downarrow =$('.down-arrow');
+// console.log(uparrow)
 $(".years-slider").slick({
     dots: true,
     arrows: true,
@@ -11,8 +13,8 @@ $(".years-slider").slick({
     autoplaySpeed:5000,
     vertical: true,
     verticalSwiping: true,
-    prevArrow: "<a  class='slick-prev '><i class='' aria-hidden='true'>&uarr;</i></a>",
-    nextArrow: "<a class='slick-next '><i class='' aria-hidden='true'>&darr;</i></a>"
+    prevArrow: "<a  class='slick-prev '></a>",
+    nextArrow: "<a class='slick-next '></a>"
 });
 $('.slick-dots li').each(function(i){
   // console.log($('.year-slide .year-button')[i]);
@@ -22,6 +24,9 @@ $('.slick-dots li').each(function(i){
   // console.log($('.years .year .year-button')[i])
   let button = $('.years .year .year-button')[0];
   // var button = JSON.parse(JSON.stringify($('.years .year .year-button')[i]))
-  console.log(button)
+  // console.log(button)
   $(this).append(button);
 });
+
+$('.slick-prev').append(uparrow);
+$('.slick-next').append(downarrow);
