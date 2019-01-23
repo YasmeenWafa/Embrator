@@ -55,6 +55,7 @@
     left: 0%;
     top: 50%;
     z-index: 1;
+    transform: translateY(-50%);
   }
   // Desktop Version
   @media screen and #{breakpoint(medium)} {
@@ -73,6 +74,9 @@
       left: 49%;
       top: 53%;
       background-size: 100%;
+    }
+    &__title {
+      transform: translateY(0%);
     }
   }
 }

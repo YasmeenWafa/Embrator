@@ -381,7 +381,7 @@ while (have_rows('lastCats_cats')):the_row();
 ?>
         <?php
 $categoryImage = get_sub_field('cat_image');
-$categoryImage_size = "large";
+$categoryImage_size = "medium";
 $categoryImage_url = $categoryImage["sizes"][$categoryImage_size];
 $i++;
 ?>

@@ -1,0 +1,50 @@
+.embrator {
+  // Mobile First
+  .productInShop {
+    flex-basis: 30%;
+    margin: 5%;
+    margin-bottom: 10%;
+
+    cursor: pointer;
+    // border: 2px solid fuchsia;
+    // z-index: 109;
+    pointer-events: all !important;
+    position: relative;
+    &__background {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      // border:2px solid blue;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+      // top: 0;
+      // left: 0;
+      width: 100%;
+      padding-top: 82%;
+    }
+    &__image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      // filter: grayscale(100%);
+      transition: all 0.1s ease;
+    }
+    &__title {
+      color: black;
+      transition: all 0.1s ease;
+      margin-top: 65%;
+      margin-left: 26%;
+      position: relative;
+      z-index: 2;
+      font-family: CS;
+
+      font-size: 1.5rem;
+      top: 7%;
+    }
+  }
+  // Desktop Version
+  @media screen and #{breakpoint(medium)} {
+  }
+}

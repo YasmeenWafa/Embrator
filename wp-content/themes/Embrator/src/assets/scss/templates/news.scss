@@ -1,0 +1,299 @@
+.embrator__news {
+  // Mobile First
+  .embrator__hero {
+    &__half {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      // max-width: 50%;
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 4.5rem;
+      position: relative;
+      transform: translate(0);
+      text-align: left;
+      padding-left: 0.2em;
+      // border: 2px solid red;
+    }
+    &__caption {
+      font-size: 2rem;
+      font-family: CR;
+      text-align: left;
+      padding: 0.5em;
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      // border: 1px solid;
+    }
+    &__left {
+      left: 0%;
+      h1 {
+        top: 42%;
+        top: 0%;
+      }
+      .embrator__hero__image {
+        &_1 {
+          left: 56%;
+          width: 88%;
+          height: 41%;
+          top: 33%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-content: flex-end;
+          // align-content: flex-end;
+        }
+        &_2 {
+          width: 73%;
+          height: 42%;
+          left: 38%;
+          top: 34%;
+        }
+        &_3 {
+          width: 85%;
+          height: 41%;
+          left: 47%;
+          top: 40%;
+        }
+      }
+    }
+    &__right {
+      left: 0;
+      h1 {
+        top: 80%;
+        top: 41%;
+
+        top: 0;
+      }
+      .embrator__hero__image {
+        background-size: cover;
+        &_1 {
+          width: 88%;
+          height: 42%;
+          left: 43%;
+          top: 76%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-content: flex-end;
+        }
+        &_2 {
+          width: 73%;
+          height: 42%;
+          top: 79%;
+          left: 43%;
+        }
+        &_3 {
+          width: 82%;
+          height: 41%;
+          left: 39%;
+          top: 80%;
+        }
+      }
+    }
+  }
+  .stories {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: #d8d8d8;
+    flex-flow: row wrap;
+    padding: 2em;
+    position: relative;
+    z-index: 1;
+    // padding-bottom: 2em;
+    // padding-top: 2em;
+  }
+  .story {
+    // border: 2px solid pink;
+    flex-basis: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #ececec;
+    min-height: 40em;
+    font-family: CR;
+    margin: 1em;
+    position: relative;
+    // z-index: 1;
+    &:after {
+      position: absolute;
+      content: " ";
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      left: 4%;
+      top: 2%;
+      background-image: url("../images/pages/Home/category_background.png");
+      // dist/assets/images/pages/Home/category_background.png
+    }
+    &:hover {
+      .story__link {
+        z-index: 3;
+      }
+      .story__thumbnail {
+        span {
+          z-index: 2;
+        }
+        &:after {
+          z-index: 1;
+        }
+      }
+    }
+    &_1,
+    &_4,
+    &_7 {
+      margin-top: 1em;
+    }
+    &__link {
+      // border: 2px solid rebeccapurple;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      // background-color: rosybrown;
+      z-index: -1;
+      transition: all 0.2s ease;
+    }
+    &__header {
+      display: block;
+      padding: 1.5em;
+      time {
+        font-family: CB;
+        color: $bk-blue;
+      }
+    }
+    &__thumbnail {
+      padding-top: 70%;
+      background-size: cover;
+      position: relative;
+      span {
+        color: $aqua;
+        font-size: 4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid $aqua;
+        border-radius: 50%;
+        height: 1em;
+        width: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3%;
+        z-index: -1;
+        // transition: 0.2s all ease;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: $bk-blue;
+        opacity: 0.74;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        // transition: 0.2s all ease;
+      }
+    }
+    &__title {
+      font-family: CS;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    &__body {
+      color: #868686;
+      padding: 1.5em;
+    }
+    // background-image: linear-gradient(270deg, #305c85, #326fa0);
+  }
+  // Desktop Version
+  @media screen and #{breakpoint(medium)} {
+    .embrator__hero {
+      &__half {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        max-width: 50%;
+      }
+      &__caption {
+        font-size: 1.2rem;
+        max-width: 90%;
+        padding: 1em;
+        margin: 0;
+      }
+      &__left {
+        h1 {
+          top: 30%;
+          top: 0%;
+          font-size: 4.5rem;
+          width: 100%;
+          text-align: left;
+          padding-left: 0.2em;
+          // max-width: 75%;
+        }
+        .embrator__hero__image {
+          &_1 {
+            top: 43%;
+          }
+          &_2 {
+            // left: 38%;
+            left: 80%;
+            top: 55%;
+          }
+          &_3 {
+            // left:47%;
+            left: 64%;
+            top: 50%;
+          }
+        }
+      }
+      &__right {
+        left: 50%;
+        h1 {
+          top: 60%;
+          top: 0%;
+          font-size: 4.5rem;
+          width: 100%;
+          text-align: left;
+          padding-left: 0.2em;
+          // max-width: 75%;
+        }
+        .embrator__hero__image {
+          &_1 {
+            left: 35%;
+            top: 65%;
+            .embrator__hero__caption {
+              max-width: 100%;
+            }
+          }
+          &_2 {
+            top: 79%;
+          }
+          &_3 {
+            left: 38%;
+            top: 72%;
+          }
+        }
+      }
+    }
+    .story {
+      // border: 2px solid pink;
+      flex-basis: 30%;
+      margin: 1em;
+      &:after {
+        left: 6%;
+        top: 3%;
+      }
+      &_1,
+      &_4,
+      &_7 {
+        margin-top: 6em;
+      }
+    }
+  }
+}

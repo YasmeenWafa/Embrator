@@ -16,6 +16,15 @@
     // border-color: seagreen;
   }
 }
+.main-container{
+  padding: 0;
+  .main-grid{
+    margin: 0;
+    .main-content{
+      margin: 0;
+    }
+  }
+}
 .section__intro {
   padding: 5%;
   background-color: $bk-grey;
@@ -229,6 +238,9 @@
 .section__branches {
   text-align: center;
   padding: 9% 5%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   h1 {
     font-family: A;
     font-size: 4rem;

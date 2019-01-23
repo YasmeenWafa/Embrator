@@ -1,0 +1,193 @@
+.embrator__careers {
+  .embrator {
+    &__section {
+      // border: 2px solid red;
+      background-color: $bk-grey;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &__social {
+        // border: 2px solid blue;
+        margin: 0;
+        padding: 3%;
+        padding-top: 5%;
+        flex-basis: 10%;
+        top: 10%;
+        position: sticky;
+        &--link {
+          display: block;
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 0.5em;
+          .fa-facebook-f {
+            color: #3b5998;
+          }
+          .fa-twitter {
+            color: #38a1f3;
+          }
+        }
+      }
+      .sjb-page {
+        // border: 2px solid forestgreen;
+        // padding: 5%;
+        // padding-top: 3%;
+        padding: 0;
+        flex-basis: 80%;
+        background-color: $bk-grey;
+        .embrator__section {
+          &__title {
+            font-size: 3.6rem;
+            color: black;
+            font-family: CB;
+            text-decoration: underline;
+            padding: 0 10px;
+          }
+          &__text {
+            font-size: 1.8rem;
+            color: black;
+            font-family: CR;
+            padding: 10px;
+          }
+        }
+        .sjb-detail {
+          margin: 0;
+          .jobpost-form .form-control {
+            // font-size: 1rem;
+          }
+        }
+        .list-data {
+          background-color: $bk-grey;
+          border: none;
+          width: 100%;
+          font-size: 1.1rem;
+          margin: 0;
+          max-width: 92%;
+          padding-left: 0;
+          .job-title {
+            font-family: CB;
+            text-decoration: underline;
+            color: black;
+            font-size: 2rem;
+          }
+          .col-md-5 {
+            width: 100%;
+          }
+          .job-description {
+            color: black;
+            font-family: CR;
+          }
+          .moretag {
+            color: $aqua;
+            text-decoration: underline;
+          }
+          .job-features {
+            display: none;
+          }
+          .col-md-12 {
+            width: 100%;
+            max-width: 90%;
+          }
+          .jobpost-form {
+            h3 {
+              display: none;
+            }
+            .row {
+              margin: 0;
+            }
+            .app-submit {
+              width: 100%;
+              background-color: $bk-blue;
+              color: $aqua;
+              text-transform: uppercase;
+              font-family: CB;
+              border-radius: 3em;
+              padding: 0.8em;
+              margin-top: 1em;
+              font-size: 1.2rem;
+            }
+            .col-md-12 {
+              padding: 0;
+            }
+          }
+          label {
+            font-family: CR;
+          }
+          .hint {
+            color: grey;
+            margin-left: 1em;
+            font-size: 1.5rem;
+          }
+          .form-group {
+            margin-bottom: 10px;
+            input {
+              border-radius: 10px;
+              font-family: CR;
+            }
+            .file {
+              border-radius: 10px;
+              font-family: CR;
+              div {
+                background-color: $bk-blue !important;
+                color: $aqua !important;
+                text-transform: uppercase;
+                font-family: CB;
+                border-radius: 3em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Mobile First
+
+  // Desktop Version
+  @media screen and #{breakpoint(medium)} {
+    .embrator {
+      &__section__social {
+        margin: 0;
+        padding: 3%;
+        padding-top: 5%;
+        flex-basis: 26%;
+        position: sticky;
+      }
+      .sjb-page {
+        padding: 5%;
+        padding-top: 3%;
+        flex-basis: 90%;
+        .list-data {
+          max-width: 62%;
+          padding-left: 20px;
+          .row {
+            padding-left: 20px;
+          }
+          // margin: 15px 0;
+          .jobpost-form {
+            .row {
+              .col-md-12 {
+                width: 100%;
+                max-width: 100%;
+              }
+            }
+            .app-submit {
+              font-size: 1.2rem;
+            }
+          }
+          .hint {
+            font-size: 0.8rem;
+          }
+        }
+        .embrator__section {
+          &__title {
+            font-size: 5rem;
+            padding: 0;
+          }
+          &__text {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

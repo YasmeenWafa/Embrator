@@ -1,0 +1,127 @@
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
+}
+
+.embrator {
+  // Mobile First
+  &__hero {
+    &--singleStory {
+      .embrator__hero {
+        &__image {
+          &_1 {
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+  .next_article_section {
+    // background-blend-mode: multiply;
+    // background-image: linear-gradient(to bottom, #d8d8d8, #d8d8d8);
+    // background-color: #03A9F4;
+    // background-blend-mode: multiply;
+    // background-color: rgba(28, 101, 165, 0.55);
+    position: relative;
+    .section__background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+  &__singleStory {
+    background-color: $bk-grey;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .embrator__section {
+      &__social {
+        // border: 2px solid blue;
+        margin: 0;
+        padding: 3%;
+        padding-top: 5%;
+        flex-basis: 10%;
+        top: 10%;
+        position: sticky;
+        &--link {
+          display: block;
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 0.5em;
+          .fa-facebook-f {
+            color: #3b5998;
+          }
+          .fa-twitter {
+            color: #38a1f3;
+          }
+        }
+      }
+      &__main {
+        padding: 3%;
+        padding-left: 0;
+        padding-top: 6%;
+        header {
+          display: block;
+          font-family: CR;
+          font-size: 1rem;
+          color: $bk-blue;
+          time {
+            font-family: CB;
+          }
+        }
+        article.post {
+          .entry-content {
+            p,div,span {
+              color: $text-grey;
+              font-family: CR;
+            }
+            @include headings {
+              color: black;
+              font-family: CB;
+            }
+            blockquote {
+              border: none;
+              position: relative;
+              &:before {
+                content: '"';
+                font-size: 1.9375rem;
+                color: black;
+                font-family: A;
+                // display: inline-block;
+              }
+              &:after {
+                content: '"';
+                font-size: 1.9375rem;
+                color: black;
+                font-family: A;
+                // display: inline-block;
+              }
+              p {
+                font-size: 1.9375rem;
+                color: black;
+                font-family: A;
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Desktop Version
+  @media screen and #{breakpoint(medium)} {
+  }
+}

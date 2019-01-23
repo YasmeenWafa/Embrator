@@ -14,30 +14,30 @@ if ( have_comments() ) :
 	<section id="comments">
 		<?php
 
-		wp_list_comments(
-			array(
-				'walker'            => new Foundationpress_Comments(),
-				'max_depth'         => '',
-				'style'             => 'ol',
-				'callback'          => null,
-				'end-callback'      => null,
-				'type'              => 'all',
-				'reply_text'        => __( 'Reply', 'foundationpress' ),
-				'page'              => '',
-				'per_page'          => '',
-				'avatar_size'       => 48,
-				'reverse_top_level' => null,
-				'reverse_children'  => '',
-				'format'            => 'html5',
-				'short_ping'        => false,
-				'echo'              => true,
-				'moderation'        => __( 'Your comment is awaiting moderation.', 'foundationpress' ),
-			)
-		);
+		// wp_list_comments(
+		// 	array(
+		// 		'walker'            => new Foundationpress_Comments(),
+		// 		'max_depth'         => '',
+		// 		'style'             => 'ol',
+		// 		'callback'          => null,
+		// 		'end-callback'      => null,
+		// 		'type'              => 'all',
+		// 		'reply_text'        => __( 'Reply', 'foundationpress' ),
+		// 		'page'              => '',
+		// 		'per_page'          => '',
+		// 		'avatar_size'       => 48,
+		// 		'reverse_top_level' => null,
+		// 		'reverse_children'  => '',
+		// 		'format'            => 'html5',
+		// 		'short_ping'        => false,
+		// 		'echo'              => true,
+		// 		'moderation'        => __( 'Your comment is awaiting moderation.', 'foundationpress' ),
+		// 	)
+		// );
 
 		?>
 		<?php
-			foundationpress_the_comments_pagination();
+		//	foundationpress_the_comments_pagination();
 	 	?>
 	</section>
 <?php

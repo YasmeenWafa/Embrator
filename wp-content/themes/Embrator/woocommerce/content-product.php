@@ -28,13 +28,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php post_class(); ?>>
+
 	<?php
 	/**
 	 * woocommerce_before_shop_loop_item hook.
 	 *
 	 * @hooked woocommerce_template_loop_product_link_open - 10
 	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
+	//do_action( 'woocommerce_before_shop_loop_item' );
 
 	/**
 	 * woocommerce_before_shop_loop_item_title hook.
@@ -42,8 +43,21 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_show_product_loop_sale_flash - 10
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
+	//do_action( 'woocommerce_before_shop_loop_item_title' );?>
+<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
+
+<a href="<?php echo get_permalink($product_id) ?>" class="productInShop">
+	<div class="productInShop__background" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/pages/Home/bluebkg.png)"></div>
+	<div class="productInShop__pattern" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/pages/Home/category_background.png)"></div>
+	<figure class="productInShop__image" style="background-image: url(<?php echo $thumb['0']; ?> )"></figure>
+	<h2 class="productInShop__title">
+		<?php echo get_sub_field('cat_title') ?>
+	</h2>
+</a>
+
+	
+<?php 
 	/**
 	 * woocommerce_shop_loop_item_title hook.
 	 *

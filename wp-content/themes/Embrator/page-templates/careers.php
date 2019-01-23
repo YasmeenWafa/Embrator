@@ -18,9 +18,6 @@ get_header(); ?>
       <h1 class="embrator__hero__title"><?php the_field('hero_title_careers') ?></h1>
     </div>
 
-    <section class="embrator__section spyScroll">
-
-    </section>           
 
     <section class="section section__branches" style="background-image: url(<?php
           echo get_stylesheet_directory_uri() ?>/src/assets/images/pages/Home/branches.png)" >

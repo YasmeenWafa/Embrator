@@ -233,7 +233,7 @@ max-width: 100%;
                   // border-radius: 0%;
                     font-family: CB;
                   & th{
-                    border-top: 1.5px solid #27272770;
+                    border-top: 1.5px solid rgba(39, 39, 39, 0.4392156862745098);
                       font-weight: bold;
                       vertical-align: middle;
 
@@ -241,7 +241,7 @@ max-width: 100%;
                   & td{
                     vertical-align: middle;
                     padding: 1.5em 0;
-                    border-top: 1.5px solid #27272770;
+                    border-top: 1.5px solid rgba(39, 39, 39, 0.4392156862745098);
                   }
 
                 }
