@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="down-1" unicode="&#xe800;" d="M0 283q0 25 18 43t44 18 42-18l244-243v642q0 25 18 43t43 18 43-18 18-43v-642l243 243q18 18 43 18t43-18q18-18 18-43t-18-44l-390-390-391 390q-18 20-18 44z" horiz-adv-x="817.4" />
+
+<glyph glyph-name="left-1" unicode="&#xe801;" d="M0 353l390 391q19 18 44 18 25 0 43-18t18-44-18-43l-243-243h642q25 0 43-18t18-43-18-43-43-18h-642l243-243q18-18 18-44t-18-43-43-18-44 18z" horiz-adv-x="938" />
+
+<glyph glyph-name="right-1" unicode="&#xe802;" d="M0 347q0 26 18 43t43 17h642l-242 244q-19 18-19 44t19 42q17 19 42 19t44-19l390-390-390-391q-20-18-44-18t-42 18-19 44 19 43l242 242h-642q-25 0-43 18t-18 44z" horiz-adv-x="938" />
+
+<glyph glyph-name="up-1" unicode="&#xe803;" d="M0 354q0 26 18 44l391 390 390-390q18-18 18-44 0-26-18-43-18-18-43-18t-43 18l-243 243v-642q0-25-18-43t-43-18q-26 0-44 18t-17 43v642l-244-243q-18-18-43-18t-43 18q-18 17-18 43z" horiz-adv-x="817.4" />
+
+<glyph glyph-name="down" unicode="&#xf175;" d="M427 125q4-10-3-19l-195-215q-6-5-13-5-8 0-13 5l-198 215q-8 9-3 19 5 11 16 11h125v696q0 8 5 13t13 5h107q8 0 13-5t5-13v-696h125q11 0 16-11z" horiz-adv-x="428.6" />
+
+<glyph glyph-name="up" unicode="&#xf176;" d="M427 575q-5-11-16-11h-125v-696q0-8-5-13t-13-5h-107q-8 0-13 5t-5 13v696h-125q-12 0-16 11t3 19l195 215q5 5 13 5 7 0 13-5l198-215q7-8 3-19z" horiz-adv-x="428.6" />
+
+<glyph glyph-name="left" unicode="&#xf177;" d="M1000 404v-108q0-7-5-12t-13-5h-696v-125q0-12-11-17t-19 3l-215 196q-5 5-5 12 0 8 5 14l215 197q9 8 19 4 11-5 11-17v-125h696q8 0 13-5t5-12z" horiz-adv-x="1000" />
+
+<glyph glyph-name="right" unicode="&#xf178;" d="M964 352q0-8-5-14l-215-197q-8-8-19-4-11 5-11 17v125h-696q-8 0-13 5t-5 12v108q0 7 5 12t13 5h696v125q0 12 11 17t19-3l215-195q5-6 5-13z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

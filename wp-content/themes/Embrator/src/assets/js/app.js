@@ -8,7 +8,12 @@ import "./modules/footer";
 import "./modules/sliders";
 import "./modules/contactUs";
 import "./modules/cart-checkout";
+<<<<<<< HEAD
 import "./modules/loadMore";
+=======
+import "./modules/about";
+import "./modules/b2b";
+>>>>>>> 2045b59cecf42cefc6b852b6c25291ae2a401810
 import "gsap/CSSPlugin.js";
 import Parallax from "parallax-js";
 

@@ -3,19 +3,19 @@
 Template Name: Home
 */
 get_header(); ?>
-<!-- ----------------------------------------Outer Loop ---------------------------------- -->
+<!-- Outer Loop  -->
 <header id="cont">
     <div class="home__hero bannerSlider" role="banner" id="ver">
         <?php
             $cat1Count = count(get_field('homepage_bannerslider_cat1'));
-            if (have_rows('homepage_bannerslider_cat1')): 
+            if (have_rows('homepage_bannerslider_cat1')):
         ?>
         <div class="cat" id="cat1">
             <section class="top">
                 <?php // loop through the rows of data
                     $i1 = 1;
                 while (have_rows('homepage_bannerslider_cat1')):
-                  the_row(); 
+                  the_row();
                     if($i1 === 1 ){
                         $class= "active";
                     }else if($i1 === $cat1Count){
@@ -30,7 +30,7 @@ get_header(); ?>
                             <?php //echo $cat1Count ?>
                         </h1> -->
                         <h2>
-                            <?php 
+                            <?php
                             //the_sub_field('banner_slide_cat');
                         ?>
                         </h2>
@@ -44,23 +44,23 @@ get_header(); ?>
                         </figcaption>
                     </div>
                 </figure>
-                <?php 
+                <?php
                     $i1 = $i1+1;
                     $outerLoop = $outerLoop+1;
-                    endwhile; 
+                    endwhile;
                 ?>
             </section>
-            <?php 
+            <?php
                 else:
                 endif;
-                if (have_rows('homepage_bannerslider_cat1')): 
+                if (have_rows('homepage_bannerslider_cat1')):
             ?>
             <section class="bottom">
                 <?php
                     $j1 = 1;
                     while (have_rows('homepage_bannerslider_cat1')):
-                    the_row(); 
-                    
+                    the_row();
+
                     if($j1 === 1 ){
                         $class= "active";
                     }else{
@@ -80,7 +80,7 @@ get_header(); ?>
                     style="background-image: url(<?php echo $patternImage_url; ?> )">
                     <figure class="bannerSlider-product" style="background-image: url(<?php echo $productImage_url; ?> )"></figure>
                 </figure>
-                <?php 
+                <?php
                     $j1 = $j1+1;
                 endwhile;
             else:
@@ -90,17 +90,17 @@ get_header(); ?>
         </div>
         <?php
             $cat2Count = count(get_field('homepage_bannerslider_cat2'));
-            if (have_rows('homepage_bannerslider_cat2')): 
+            if (have_rows('homepage_bannerslider_cat2')):
         ?>
         <div class="cat" id="cat2">
             <section class="top">
                 <?php // loop through the rows of data
                     $i2 = 1;
                 while (have_rows('homepage_bannerslider_cat2')):
-                  the_row(); 
+                  the_row();
                     // if($i2 === 1 ){
                     //     // $class= "active";
-                    // }else 
+                    // }else
                     if($i2 === $cat2Count){
                         $class= "lastSlide";
                     }else{
@@ -113,7 +113,7 @@ get_header(); ?>
                             <?php //echo $cat2Count ?>
                         </h1>
                         <h2>
-                            <?php 
+                            <?php
                             //the_sub_field('banner_slide_cat');
                         ?>
                         </h2> -->
@@ -127,23 +127,23 @@ get_header(); ?>
                         </figcaption>
                     </div>
                 </figure>
-                <?php 
+                <?php
                     $i2 = $i2+1;
                     $outerLoop = $outerLoop+1;
-                    endwhile; 
+                    endwhile;
                 ?>
             </section>
-            <?php 
+            <?php
                 else:
                 endif;
-                if (have_rows('homepage_bannerslider_cat2')): 
+                if (have_rows('homepage_bannerslider_cat2')):
             ?>
             <section class="bottom">
                 <?php
                     $j2 = 1;
                     while (have_rows('homepage_bannerslider_cat2')):
-                    the_row(); 
-                    
+                    the_row();
+
                     // if($j2 === 1 ){
                     // // $class= "active";
                     // }else{
@@ -163,7 +163,7 @@ get_header(); ?>
                     style="background-image: url(<?php echo $patternImage_url; ?> )">
                     <figure class="bannerSlider-product" style="background-image: url(<?php echo $productImage_url; ?> )"></figure>
                 </figure>
-                <?php 
+                <?php
                     $j2 = $j2+1;
                 endwhile;
             else:
@@ -173,14 +173,14 @@ get_header(); ?>
         </div>
         <?php
             $cat3Count = count(get_field('homepage_bannerslider_cat3'));
-            if (have_rows('homepage_bannerslider_cat3')): 
+            if (have_rows('homepage_bannerslider_cat3')):
         ?>
         <div class="cat" id="cat3">
             <section class="top">
                 <?php // loop through the rows of data
                     $i3 = 1;
                 while (have_rows('homepage_bannerslider_cat3')):
-                  the_row(); 
+                  the_row();
                     if($i3 === 1 ){
                         // $class= "active";
                     }else if($i3 === $cat3Count){
@@ -195,7 +195,7 @@ get_header(); ?>
                             <?php //echo $cat1Count ?>
                         </h1> -->
                         <h2>
-                            <?php 
+                            <?php
                             //the_sub_field('banner_slide_cat');
                         ?>
                         </h2>
@@ -209,23 +209,23 @@ get_header(); ?>
                         </figcaption>
                     </div>
                 </figure>
-                <?php 
+                <?php
                     $i3 = $i3+1;
                     $outerLoop = $outerLoop+1;
-                    endwhile; 
+                    endwhile;
                 ?>
             </section>
-            <?php 
+            <?php
                 else:
                 endif;
-                if (have_rows('homepage_bannerslider_cat3')): 
+                if (have_rows('homepage_bannerslider_cat3')):
             ?>
             <section class="bottom">
                 <?php
                     $j3 = 1;
                     while (have_rows('homepage_bannerslider_cat3')):
-                    the_row(); 
-                    
+                    the_row();
+
                     if($j3 === 1 ){
                         // $class= "active";
                     }else{
@@ -245,7 +245,7 @@ get_header(); ?>
                     style="background-image: url(<?php echo $patternImage_url; ?> )">
                     <figure class="bannerSlider-product" style="background-image: url(<?php echo $productImage_url; ?> )"></figure>
                 </figure>
-                <?php 
+                <?php
                     $j3 = $j3+1;
                 endwhile;
             else:
@@ -377,7 +377,7 @@ if (have_rows('lastCats_cats')): ?>
     <div class="lastCats" id="scene" data-relative-input="true" data-hover-only="false">
         <?php // loop through the rows of data
   $i = 0;
-while (have_rows('lastCats_cats')):the_row(); 
+while (have_rows('lastCats_cats')):the_row();
 ?>
         <?php
 $categoryImage = get_sub_field('cat_image');
