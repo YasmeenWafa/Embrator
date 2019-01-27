@@ -1,0 +1,6 @@
+2019-01-17T07:36:15+00:00 CRITICAL syntax error, unexpected '$required_field_asterisk' (T_VARIABLE), expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/single-jobpost/job-application.php on line 105
+
+2019-01-17T07:40:12+00:00 CRITICAL syntax error, unexpected '.' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/single-jobpost/job-application.php on line 120
+
+2019-01-17T14:09:54+00:00 CRITICAL syntax error, unexpected 'id' (T_STRING), expecting ']' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/page-templates/storeLocator.php on line 21
+

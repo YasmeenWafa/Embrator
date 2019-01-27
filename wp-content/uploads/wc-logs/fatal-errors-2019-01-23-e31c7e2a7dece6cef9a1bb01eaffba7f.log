@@ -1,0 +1,22 @@
+2019-01-23T08:07:48+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/featured-image.php on line 14
+
+2019-01-23T08:07:53+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/featured-image.php on line 14
+
+2019-01-23T08:53:04+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 29
+
+2019-01-23T08:53:04+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 29
+
+2019-01-23T08:53:06+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 29
+
+2019-01-23T08:53:06+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 29
+
+2019-01-23T10:24:58+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 31
+
+2019-01-23T11:55:33+00:00 CRITICAL syntax error, unexpected 'the_post_thumbnail_url' (T_STRING) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 28
+
+2019-01-23T11:59:24+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 27
+
+2019-01-23T11:59:52+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php on line 27
+
+2019-01-23T12:45:27+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/featured-image.php on line 16
+

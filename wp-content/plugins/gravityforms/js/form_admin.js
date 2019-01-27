@@ -21,28 +21,6 @@ jQuery(document).ready(function($){
 			FormatCurrency(this);
 		});
 	});
-
-
-	/**
-	 * Dismiss GF dimissible messages.
-	 */
-	$(document).on( "click", ".notice-dismiss", function(){
-		var $div = $(this).closest('div.notice');
-		if ( $div.length > 0 ) {
-			var messageKey = $div.data('gf_dismissible_key');
-			var nonce = $div.data('gf_dismissible_nonce');
-			if ( messageKey  ) {
-				jQuery.ajax({
-					url: ajaxurl,
-					data: {
-						action: 'gf_dismiss_message',
-						message_key: messageKey,
-						nonce: nonce
-					}
-				})
-			}
-		}
-	});
 });
 
 function FormatCurrency(element){
@@ -118,16 +96,14 @@ function CreateConditionalLogic(objectType, obj){
     var anySelected = obj.conditionalLogic.logicType == "any" ? "selected='selected'" :"";
 
     var objText;
-    if (obj['type'] == "section")
-        objText = gf_vars.thisSectionIf;
-    else if(objectType == "field")
+    if(objectType == "field")
         objText = gf_vars.thisFieldIf;
     else if(objectType == "page")
         objText = gf_vars.thisPage;
     else if(objectType == "confirmation")
-        objText = gf_vars.thisConfirmation;
+        objText = gf_vars.thisConfirmation
     else if(objectType == "notification")
-        objText = gf_vars.thisNotification;
+        objText = gf_vars.thisNotification
     else
         objText = gf_vars.thisFormButton;
 
@@ -148,9 +124,9 @@ function CreateConditionalLogic(objectType, obj){
         str += GetRuleFields(objectType, i, rule.fieldId);
         str += GetRuleOperators(objectType, i, rule.fieldId, rule.operator);
         str += GetRuleValues(objectType, i, rule.fieldId, rule.value);
-        str += "<a class='add_field_choice' title='add another rule' onclick=\"InsertRule('" + objectType + "', " + (i+1) + ");\" onkeypress=\"InsertRule('" + objectType + "', " + (i+1) + ");\" ><i class='gficon-add'></i></a>";
+        str += "<a class='add_field_choice' title='add another rule' onclick=\"InsertRule('" + objectType + "', " + (i+1) + ");\" ><i class='gficon-add'></i></a>";
         if(obj.conditionalLogic.rules.length > 1 )
-            str += "<a class='delete_field_choice' title='remove this rule' onclick=\"DeleteRule('" + objectType + "', " + i + ");\" onkeypress=\"DeleteRule('" + objectType + "', " + i + ");\" ><i class='gficon-subtract'></i></a></li>";
+            str += "<a class='delete_field_choice' title='remove this rule' onclick=\"DeleteRule('" + objectType + "', " + i + ");\" ><i class='gficon-subtract'></i></a></li>";
 
         str += "</div>";
     }
@@ -162,12 +138,12 @@ function CreateConditionalLogic(objectType, obj){
 }
 
 function GetRuleOperators( objectType, i, fieldId, selectedOperator ) {
-    var str, supportedOperators, operators, selected;
+    var str, supportedOperators, operators, str, selected;
     supportedOperators = {"is":"is","isnot":"isNot", ">":"greaterThan", "<":"lessThan", "contains":"contains", "starts_with":"startsWith", "ends_with":"endsWith"};
     str = "<select id='" + objectType + "_rule_operator_" + i + "' class='gfield_rule_select' onchange='SetRuleProperty(\"" + objectType + "\", " + i + ", \"operator\", jQuery(this).val());var valueSelector=\"#" + objectType + "_rule_value_" + i + "\"; jQuery(valueSelector).replaceWith(GetRuleValues(\"" + objectType + "\", " + i + ",\"" + fieldId + "\", \"\"));jQuery(valueSelector).change();'>";
     operators = IsEntryMeta(fieldId) ? GetOperatorsForMeta(supportedOperators, fieldId) : supportedOperators;
 
-    operators = gform.applyFilters( 'gform_conditional_logic_operators', operators, objectType, fieldId );
+    operators = gform.applyFilters( 'gform_conditional_logic_operators', operators, objectType, fieldId )
 
     jQuery.each(operators,function(operator, stringKey){
         selected = selectedOperator == operator ? "selected='selected'" : "";
@@ -198,27 +174,12 @@ function GetRuleFields( objectType, ruleIndex, selectedFieldId ) {
 
     for( var i = 0; i < form.fields.length; i++ ) {
 
-        var field = form.fields[i];
+        if( IsConditionalLogicField( form.fields[i] ) ) {
 
-        if( IsConditionalLogicField( field ) ) {
-
-            // @todo: the inputType check will likely go away once we've figured out how we're going to manage inputs moving forward
-            if( field.inputs && jQuery.inArray( GetInputType( field ), [ 'checkbox', 'email' ] ) == -1 ) {
-                for( var j = 0; j < field.inputs.length; j++ ) {
-                    var input = field.inputs[j];
-                    if( ! input.isHidden ) {
-                        options.push( {
-                            label: GetLabel( field, input.id ),
-                            value: input.id
-                        } );
-                    }
-                }
-            } else {
-                options.push( {
-                    label: GetLabel( field ),
-                    value: field.id
-                } );
-            }
+            options.push({
+                label: form.fields[i].adminLabel ? form.fields[i].adminLabel : form.fields[i].label,
+                value: form.fields[i].id
+            });
 
         }
 
@@ -229,27 +190,16 @@ function GetRuleFields( objectType, ruleIndex, selectedFieldId ) {
 
     options = gform.applyFilters( 'gform_conditional_logic_fields', options, form, selectedFieldId );
 
-    str += GetRuleFieldsOptions( options, selectedFieldId );
-
-    str += "</select>";
-    return str;
-}
-
-function GetRuleFieldsOptions( options, selectedFieldId ){
-    var str = '';
+    // create the actual <option> strings
     for( var i = 0; i < options.length; i++ ) {
 
         var option = options[i];
-        if ( typeof option.options !== 'undefined' ) {
-            str += '<optgroup label=" ' + option.label + '">';
-            str += GetRuleFieldsOptions( option.options, selectedFieldId );
-            str += '</optgroup>';
-        } else {
-            var selected = option.value == selectedFieldId ? "selected='selected'" : '';
+        var selected = option.value == selectedFieldId ? "selected='selected'" : '';
 
-            str += "<option value='" + option.value + "' " + selected + ">" + option.label + "</option>";
-        }
+        str += "<option value='" + option.value + "' " + selected + ">" + option.label + "</option>";
     }
+
+    str += "</select>";
     return str;
 }
 
@@ -296,7 +246,7 @@ function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue, in
     if(!inputName)
         inputName = false;
 
-    var dropdownId = inputName == false ? objectType + '_rule_value_' + ruleIndex : inputName;
+    var dropdown_id = inputName == false ? objectType + '_rule_value_' + ruleIndex : inputName;
 
     if(selectedFieldId == 0)
         selectedFieldId = GetFirstRuleField();
@@ -313,14 +263,14 @@ function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue, in
 
     if(field && field["type"] == "post_category" && field["displayAllCategories"]){
 
-        var dropdown = jQuery('#' + dropdownId + ".gfield_category_dropdown");
+        var dropdown = jQuery('#' + dropdown_id + ".gfield_category_dropdown");
 
         //don't load category drop down if it already exists (to avoid unecessary ajax requests)
         if(dropdown.length > 0){
 
             var options = dropdown.html();
             options = options.replace("value=\"" + selectedValue + "\"", "value=\"" + selectedValue + "\" selected=\"selected\"");
-            str = "<select id='" + dropdownId + "' class='gfield_rule_select gfield_rule_value_dropdown gfield_category_dropdown'>" + options + "</select>";
+            str = "<select id='" + dropdown_id + "' class='gfield_rule_select gfield_rule_value_dropdown gfield_category_dropdown'>" + options + "</select>";
         }
         else{
             var placeholderName = inputName == false ? "gfield_ajax_placeholder_" + ruleIndex : inputName + "_placeholder";
@@ -335,7 +285,7 @@ function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue, in
                                     if(dropdown_string){
                                         jQuery('#' + placeholderName).replaceWith(dropdown_string.trim());
 
-                                        SetRuleProperty(objectType, ruleIndex, "value", jQuery("#" + dropdownId).val());
+                                        SetRuleProperty(objectType, ruleIndex, "value", jQuery("#" + dropdown_id).val());
                                     }
                                 }
                         );
@@ -351,27 +301,6 @@ function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue, in
         }].concat(field.choices) : field.choices;
         str = GetRuleValuesDropDown(ruleChoices, objectType, ruleIndex, selectedValue, inputName);
     }
-    else if( IsAddressSelect( selectedFieldId, field )  ) {
-
-        //loading categories via AJAX
-        jQuery.post( ajaxurl, {
-            action:       'gf_get_address_rule_values_select',
-            address_type: field.addressType,
-            value:        selectedValue,
-            id:           dropdownId
-        }, function( selectMarkup ) {
-            if( selectMarkup ) {
-                $select = jQuery( selectMarkup.trim() );
-                $placeholder = jQuery( '#' + dropdownId );
-                $placeholder.replaceWith( $select );
-                SetRuleProperty( objectType, ruleIndex, 'value', $select.val() );
-            }
-        } );
-
-        // will be replaced by real drop down during the ajax callback
-        str = "<select id='" + dropdownId + "' class='gfield_rule_select'><option>" + gf_vars['loading'] + "</option></select>";
-
-    }
     else if (isEntryMeta && entry_meta && entry_meta[selectedFieldId] &&  entry_meta[selectedFieldId].filter && typeof entry_meta[selectedFieldId].filter.choices != 'undefined') {
         str = GetRuleValuesDropDown(entry_meta[selectedFieldId].filter.choices, objectType, ruleIndex, selectedValue, inputName);
     }
@@ -379,38 +308,12 @@ function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue, in
         selectedValue = selectedValue ? selectedValue.replace(/'/g, "&#039;") : "";
 
         //create a text field for fields that don't have choices (i.e text, textarea, number, email, etc...)
-        str = "<input type='text' placeholder='" + gf_vars["enterValue"] + "' class='gfield_rule_select' id='" + dropdownId + "' name='" + dropdownId + "' value='" + selectedValue.replace(/'/g, "&#039;") + "' onchange='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());' onkeyup='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());'>";
+        str = "<input type='text' placeholder='" + gf_vars["enterValue"] + "' class='gfield_rule_select' id='" + dropdown_id + "' name='" + dropdown_id + "' value='" + selectedValue.replace(/'/g, "&#039;") + "' onchange='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());' onkeyup='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());'>";
     }
 
     str = gform.applyFilters( 'gform_conditional_logic_values_input', str, objectType, ruleIndex, selectedFieldId, selectedValue )
 
     return str;
-}
-/**
- * Determine if current Address field input ID is a select (i.e. US => State, International => Country)
- * @param inputId string Address field input ID
- * @param field object Address field
- * @returns {boolean}
- * @constructor
- */
-function IsAddressSelect( inputId, field ) {
-
-    if( ! field || GetInputType( field ) != 'address' ) {
-        return false;
-    }
-
-    switch( field.addressType ) {
-        case '':
-        case 'international':
-            selectInputId = field.id + '.6';
-            break;
-        case 'us':
-        case 'canadian':
-            selectInputId = field.id + '.4';
-            break;
-    }
-
-    return inputId == selectInputId;
 }
 
 function GetFirstRuleField(){
@@ -459,7 +362,7 @@ function SetRuleProperty(objectType, ruleIndex, name, value){
     obj.conditionalLogic.rules[ruleIndex][name] = value;
 }
 
-function GetFieldById( id ) {
+function GetFieldById(id){
     id = parseInt( id );
     for(var i=0; i<form.fields.length; i++){
         if(form.fields[i].id == id)
@@ -814,12 +717,6 @@ function ConfirmationObj() {
         $("#gform-settings").submit();
     };
 
-    gaddon.duplicateFeed = function (id) {
-        $("#single_action").val("duplicate");
-        $("#single_action_argument").val(id);
-        $("#gform-settings").submit();
-    };
-
     function isValidJson(str) {
         try {
             JSON.parse(str);
@@ -918,7 +815,6 @@ var gfMergeTagsObj = function(form) {
                         terms.push( ui.item.value );
 
                         this.value = terms.join( " " );
-                        elem.trigger('input').trigger('propertychange');
                         return false;
                     }
                 });
@@ -1137,14 +1033,11 @@ var gfMergeTagsObj = function(form) {
         otherGroup.push( { tag: '{embed_post:ID}', label: this.getMergeTagLabel('{embed_post:ID}') });
         otherGroup.push( { tag: '{embed_post:post_title}', label: this.getMergeTagLabel('{embed_post:post_title}') });
         otherGroup.push( { tag: '{embed_url}', label: this.getMergeTagLabel('{embed_url}') });
+        otherGroup.push( { tag: '{entry_id}', label: this.getMergeTagLabel('{entry_id}') });
+        otherGroup.push( { tag: '{entry_url}', label: this.getMergeTagLabel('{entry_url}') });
+        otherGroup.push( { tag: '{form_id}', label: this.getMergeTagLabel('{form_id}') });
 
-        // the form and entry objects are not available during replacement of pre-population merge tags
-        if (!isPrepop) {
-            otherGroup.push({tag: '{entry_id}', label: this.getMergeTagLabel('{entry_id}')});
-            otherGroup.push({tag: '{entry_url}', label: this.getMergeTagLabel('{entry_url}')});
-            otherGroup.push({tag: '{form_id}', label: this.getMergeTagLabel('{form_id}')});
-            otherGroup.push({tag: '{form_title}', label: this.getMergeTagLabel('{form_title}')});
-        }
+        otherGroup.push( { tag: '{form_title}', label: this.getMergeTagLabel('{form_title}') });
 
         otherGroup.push( { tag: '{user_agent}', label: this.getMergeTagLabel('{user_agent}') });
         otherGroup.push( { tag: '{referer}', label: this.getMergeTagLabel('{referer}') });
@@ -1255,7 +1148,7 @@ var gfMergeTagsObj = function(form) {
                     continue;
 
                 var input = field.inputs[i];
-                if(inputType == "creditcard" && jQuery.inArray(parseFloat(input.id),[parseFloat(field.id + ".2"), parseFloat(field.id + ".3"), parseFloat(field.id + ".5")]) > -1)
+                if(inputType == "creditcard" && jQuery.inArray(input.id,[parseFloat(field.id + ".2"), parseFloat(field.id + ".3"), parseFloat(field.id + ".5")]) > -1)
                     continue;
                 label = GetLabel(field, input.id).replace("'", "\\'");
                 value = "{" + label + ":" + input.id + tagArgs + "}";
@@ -1505,4 +1398,3 @@ function makeArray( object ) {
 function isSet( $var ) {
     return typeof $var != 'undefined';
 }
-

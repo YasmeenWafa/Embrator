@@ -4,15 +4,10 @@ if ( ! class_exists( 'GFForms' ) ) {
 	die();
 }
 
-/**
- * Class GFUpdate
- *
- * Handles Gravity Forms updates
- */
 class GFUpdate {
 	public static function update_page() {
 		if ( ! GFCommon::current_user_can_any( 'gravityforms_view_updates' ) ) {
-			wp_die( esc_html__( "You don't have permissions to view this page", 'gravityforms' ) );
+			wp_die( __( "You don't have permissions to view this page", 'gravityforms' ) );
 		}
 
 		if ( ! GFCommon::ensure_wp_version() ) {
@@ -24,23 +19,15 @@ class GFUpdate {
 
 		wp_print_styles( array( 'thickbox' ) );
 
-		$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] ) ? '' : '.min';
-
 		?>
 
-		<link rel="stylesheet" href="<?php echo GFCommon::get_base_url() . "/css/admin{$min}.css?ver=" . GFForms::$version ?>" />
+		<link rel="stylesheet" href="<?php echo GFCommon::get_base_url() . '/css/admin.css' ?>" />
 
 		<div class="wrap <?php echo GFCommon::get_browser_class() ?>">
-			<h2><?php esc_html_e( 'Gravity Forms Updates', 'gravityforms' ) ?></h2>
-
-			<?php GFCommon::display_dismissible_message(); ?>
+			<h2><?php _e( 'Gravity Forms Updates', 'gravityforms' ) ?></h2>
 			<?php
 
 			$version_info = GFCommon::get_version_info( false );
-
-			/**
-			 * Fires after Gravity Forms checks for a new version
-			 */
 			do_action( 'gform_after_check_update' );
 
 			if ( version_compare( GFCommon::$version, $version_info['version'], '<' ) ) {
@@ -52,13 +39,13 @@ class GFUpdate {
 				if ( rgar( $version_info, 'is_valid_key' ) ) {
 					?>
 					<div class="gf_update_outdated alert_yellow">
-						<?php echo esc_html( $message ) . ' <p>' . sprintf( esc_html__( 'You can update to the latest version automatically or download the update and install it manually. %sUpdate Automatically%s %sDownload Update%s', 'gravityforms' ), "</p><a class='button-primary' href='{$upgrade_url}'>", '</a>', "&nbsp;<a class='button' href='{$version_info["url"]}'>", '</a>' ); ?>
+						<?php echo $message . ' ' . sprintf( __( '<p>You can update to the latest version automatically or download the update and install it manually. %sUpdate Automatically%s %sDownload Update%s', 'gravityforms' ), "</p><a class='button-primary' href='{$upgrade_url}'>", '</a>', "&nbsp;<a class='button' href='{$version_info["url"]}'>", '</a>' ); ?>
 					</div>
 				<?php
 				} else {
 					?>
 					<div class="gf_update_expired alert_red">
-						<?php echo esc_html( $message ) . ' ' . sprintf( esc_html( '%sRegister%s your copy of Gravity Forms to receive access to automatic updates and support. Need a license key? %sPurchase one now%s.', 'gravityforms' ), '<a href="admin.php?page=gf_settings">', '</a>', '<a href="http://www.gravityforms.com">', '</a>' ); ?>
+						<?php echo $message . ' ' . __( sprintf( '%sRegister%s your copy of Gravity Forms to receive access to automatic updates and support. Need a license key? %sPurchase one now%s.', '<a href="admin.php?page=gf_settings">', '</a>', '<a href="http://www.gravityforms.com">', '</a>' ), 'gravityforms' ); ?>
 					</div>
 				<?php
 				}
@@ -70,14 +57,11 @@ class GFUpdate {
 
 				?>
 				<div class="gf_update_current alert_green">
-					<?php esc_html_e( 'Your version of Gravity Forms is up to date.', 'gravityforms' ); ?>
+					<?php _e( 'Your version of Gravity Forms is up to date.', 'gravityforms' ); ?>
 				</div>
 			<?php
 			}
 
-			/**
-			 * Fires after the notifications that signal that Gravity Forms has an update/license key has expired or is needed
-			 */
 			do_action( 'gform_updates' );
 			?>
 

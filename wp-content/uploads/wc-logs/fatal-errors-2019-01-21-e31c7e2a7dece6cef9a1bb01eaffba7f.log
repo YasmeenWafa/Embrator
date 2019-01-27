@@ -1,0 +1,102 @@
+2019-01-21T11:44:31+00:00 CRITICAL syntax error, unexpected 'wp_query' (T_STRING), expecting variable (T_VARIABLE) or '$' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 88
+
+2019-01-21T11:44:51+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 91
+
+2019-01-21T11:45:00+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 91
+
+2019-01-21T14:33:14+00:00 CRITICAL syntax error, unexpected ':' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/functions.php on line 107
+
+2019-01-21T14:33:14+00:00 CRITICAL syntax error, unexpected ':' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/functions.php on line 107
+
+2019-01-21T14:33:30+00:00 CRITICAL syntax error, unexpected ':' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/functions.php on line 107
+
+2019-01-21T14:34:25+00:00 CRITICAL syntax error, unexpected ':' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/functions.php on line 107
+
+2019-01-21T15:25:31+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:25:35+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:25:39+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:25:45+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:25:54+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:25:57+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:26:04+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:26:08+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:26:16+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:26:21+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+
+2019-01-21T15:26:28+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_vars() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 93
+

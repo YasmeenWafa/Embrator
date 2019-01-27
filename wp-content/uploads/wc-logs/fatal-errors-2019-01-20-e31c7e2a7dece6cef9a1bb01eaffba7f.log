@@ -1,0 +1,66 @@
+2019-01-20T12:18:02+00:00 CRITICAL Uncaught Error: Call to undefined function Sunday, January 20th, 2019() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php:13
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/content.php(18): foundationpress_entry_meta()
+#1 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(690): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(647): load_template('/Applications/M...', false)
+#3 /Applications/MAMP/htdocs/embrator/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#4 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php(53): get_template_part('template-parts/...', '')
+#5 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applicati in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php on line 13
+
+2019-01-20T12:18:02+00:00 CRITICAL Uncaught Error: Call to undefined function Sunday, January 20th, 2019() in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php:13
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/content.php(18): foundationpress_entry_meta()
+#1 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(690): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(647): load_template('/Applications/M...', false)
+#3 /Applications/MAMP/htdocs/embrator/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#4 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php(16): get_template_part('template-parts/...', '')
+#5 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applicat in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php on line 13
+
+2019-01-20T12:18:48+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php:13
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/content.php(18): foundationpress_entry_meta()
+#1 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(690): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(647): load_template('/Applications/M...', false)
+#3 /Applications/MAMP/htdocs/embrator/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#4 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/single.php(16): get_template_part('template-parts/...', '')
+#5 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#8 {main}
+  t in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php on line 13
+
+2019-01-20T12:18:48+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php:13
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/content.php(18): foundationpress_entry_meta()
+#1 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(690): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/wp-includes/template.php(647): load_template('/Applications/M...', false)
+#3 /Applications/MAMP/htdocs/embrator/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#4 /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php(53): get_template_part('template-parts/...', '')
+#5 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#8 {main}
+  th in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/library/entry-meta.php on line 13
+
+2019-01-20T12:42:51+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 53
+
+2019-01-20T12:43:33+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 53
+
+2019-01-20T12:44:06+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 53
+
+2019-01-20T12:53:22+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /Applications/MAMP/htdocs/embrator/wp-includes/class-wp-image-editor-gd.php on line 185
+
+2019-01-20T13:04:17+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 53
+
+2019-01-20T13:13:26+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 1
+
+2019-01-20T13:14:40+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/template-parts/content.php on line 15
+
+2019-01-20T13:16:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /Applications/MAMP/htdocs/embrator/wp-includes/class-wp-hook.php on line 285
+
+2019-01-20T13:53:37+00:00 CRITICAL syntax error, unexpected 'post_type' (T_STRING), expecting ']' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/index.php on line 85
+

@@ -1,0 +1,160 @@
+2019-01-15T09:52:59+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 43
+
+2019-01-15T09:54:24+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 64
+
+2019-01-15T09:54:34+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 64
+
+2019-01-15T09:55:14+00:00 CRITICAL syntax error, unexpected '?' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 63
+
+2019-01-15T09:56:14+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 64
+
+2019-01-15T09:57:36+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 64
+
+2019-01-15T09:58:07+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 64
+
+2019-01-15T09:58:16+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 64
+
+2019-01-15T09:58:49+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 63
+
+2019-01-15T10:02:36+00:00 CRITICAL syntax error, unexpected '.', expecting case (T_CASE) or default (T_DEFAULT) or '}' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 62
+
+2019-01-15T10:04:52+00:00 CRITICAL syntax error, unexpected '.', expecting case (T_CASE) or default (T_DEFAULT) or '}' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 62
+
+2019-01-15T10:07:23+00:00 CRITICAL syntax error, unexpected '.', expecting case (T_CASE) or default (T_DEFAULT) or '}' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 61
+
+2019-01-15T10:07:59+00:00 CRITICAL syntax error, unexpected '.', expecting case (T_CASE) or default (T_DEFAULT) or '}' in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 61
+
+2019-01-15T10:13:58+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:14:01+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:15:40+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:15:43+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:17:56+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:17:59+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:18:55+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:18:58+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:19:54+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:19:57+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:20:29+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:20:32+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:22:59+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:23:02+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:23:20+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:23:23+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:25:14+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:25:17+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:25:23+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:25:27+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:25:51+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:25:54+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:27:20+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T10:27:23+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-end.php on line 42
+
+2019-01-15T12:13:27+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post_Type as array in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php:63
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/public/partials/simple-job-board-template-functions.php(31): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/public/partials/simple-job-board-template-functions.php(781): get_simple_job_board_template('global/content-...')
+#2 /Applications/MAMP/htdocs/embrator/wp-includes/class-wp-hook.php(286): sjb_job_listing_wrapper_start('')
+#3 /Applications/MAMP/htdocs/embrator/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/embrator/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/archive-jobpost.php(40): do_action('sjb_before_main...')
+#6 /Applications/MAMP/htdocs/embrator/wp-inc in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 63
+
+2019-01-15T12:14:13+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post_Type as array in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php:63
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/public/partials/simple-job-board-template-functions.php(31): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/public/partials/simple-job-board-template-functions.php(781): get_simple_job_board_template('global/content-...')
+#2 /Applications/MAMP/htdocs/embrator/wp-includes/class-wp-hook.php(286): sjb_job_listing_wrapper_start('')
+#3 /Applications/MAMP/htdocs/embrator/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/embrator/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/archive-jobpost.php(40): do_action('sjb_before_main...')
+#6 /Applications/MAMP/htdocs/embrator/wp-inc in /Applications/MAMP/htdocs/embrator/wp-content/plugins/simple-job-board/templates/global/content-wrapper-start.php on line 63
+
+2019-01-15T12:42:54+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 45
+
+2019-01-15T12:47:12+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post_Type as array in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 51
+
+2019-01-15T12:47:24+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post_Type as array in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 51
+
+2019-01-15T12:47:36+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post_Type as array in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 51
+
+2019-01-15T12:48:12+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post_Type as array in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/embrator/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/embrator/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/embrator/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 51
+
+2019-01-15T13:04:09+00:00 CRITICAL syntax error, unexpected ',' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 53
+
+2019-01-15T13:04:15+00:00 CRITICAL syntax error, unexpected ',' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 53
+
+2019-01-15T13:51:33+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 249
+
+2019-01-15T13:51:38+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 249
+
+2019-01-15T13:51:53+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 249
+
+2019-01-15T13:52:09+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 250
+
+2019-01-15T13:52:48+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 250
+
+2019-01-15T13:53:36+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/archive-jobpost.php on line 250
+
+2019-01-15T15:20:09+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/posted-date.php on line 24
+
+2019-01-15T18:57:08+00:00 CRITICAL syntax error, unexpected '?>' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/short-description.php on line 23
+
+2019-01-15T18:57:14+00:00 CRITICAL syntax error, unexpected '?>' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/short-description.php on line 23
+
+2019-01-15T19:00:21+00:00 CRITICAL syntax error, unexpected '?>' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/short-description.php on line 23
+
+2019-01-15T19:01:17+00:00 CRITICAL syntax error, unexpected '?>' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/short-description.php on line 23
+
+2019-01-15T19:01:47+00:00 CRITICAL syntax error, unexpected '?>' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/short-description.php on line 23
+
+2019-01-15T19:02:12+00:00 CRITICAL syntax error, unexpected '?>' in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/simple_job_board/listing/list-view/short-description.php on line 23
+
+2019-01-15T19:08:44+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /Applications/MAMP/htdocs/embrator/wp-content/themes/Embrator/functions.php on line 77
+
